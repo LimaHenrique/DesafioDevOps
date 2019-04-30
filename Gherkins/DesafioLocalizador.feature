@@ -14,6 +14,6 @@ E Estou na página de localização de loja
 
 Quando Insiro minha localização
 
-Entao Clico na opção Procurar
+E Clico na opção Procurar
 
-E A loja mais próxima a mim será mostrada
+Entao A loja mais próxima a mim será mostrada
