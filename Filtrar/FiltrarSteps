@@ -1,0 +1,48 @@
+@given(u'A página principal do Extra está aberta')
+def step_impl(context):
+    context.ObjFiltrar.home_extra()
+
+
+@when(u'È iniciado uma pesquisa por Celular')
+def step_impl(context):
+    context.ObjFiltrar.pesquisar()
+
+
+@then(u'Os resultados de celulares deverão aparecer')
+def step_impl(context):
+    pass
+
+
+@then(u'A página dos resultados de celulares está aberta')
+def step_impl(context):
+    pass
+
+
+@when(u'É clicado na opção de filtro Capa para Celular')
+def step_impl(context):
+    context.ObjFiltrar.filtrar1()
+
+
+@then(u'Capa de Celulares aparecerão')
+def step_impl(context):
+    pass
+
+
+@when(u'A opção R$ 20 a R$ 30 é selecionada')
+def step_impl(context):
+    context.ObjFiltrar.filtrar2()
+
+
+@then(u'Os resultados filtrados aparecerão')
+def step_impl(context):
+    pass
+
+
+@when(u'A opção Samsung é selecionada')
+def step_impl(context):
+    context.ObjFiltrar.filtrar3()
+
+
+@then(u'Os resultados filtrados para capas de celulares Samsung aparecerão')
+def step_impl(context):
+    pass
