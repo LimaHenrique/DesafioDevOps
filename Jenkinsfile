@@ -6,20 +6,20 @@ pipeline{
             steps{
                 echo 'Building'
                 bat '''
-                pip install python-jenkins
-                python -m pip install --upgrade pip
-                pip install virtualenv
-                virtualenv env
-                env//s//activate
+                start cmd pip install python-jenkins
+                start cmd python -m pip install --upgrade pip
+                start cmd pip install virtualenv
+                start cmd virtualenv env
+                start cmd env//Scripts//activate
                 '''
             }
         }
         stage ("Test"){
             steps{
-               sh '''
-               cd Rodrigo
-               python -m Pyautomators -f json -o rodrigo.json
-               type rodrigo.json
+               bat '''
+               start cmd cd Rodrigo
+               start cmd python -m Pyautomators -f json -o .//rodrigo.json
+               start cmd type rodrigo.json
                '''
             }
         }
