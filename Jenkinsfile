@@ -7,7 +7,7 @@ pipeline{
                 echo 'Building'
                 git 'https://github.com/LimaHenrique/DesafioDevOps'
                 powershell '''
-                pip install python-jenkins
+                script: 'pip install python-jenkins'
                 python -m pip install --upgrade pip
                 pip install virtualenv
                 virtualenv env
