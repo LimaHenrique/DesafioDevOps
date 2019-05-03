@@ -7,8 +7,8 @@ pipeline{
                 echo 'Building'
                 git 'https://github.com/LimaHenrique/DesafioDevOps'
                 bat '''
-                pip install python-jenkins
                 python -m pip install --upgrade pip
+                pip install python-jenkins
                 pip install virtualenv
                 virtualenv env
                 env//Scripts//activate
