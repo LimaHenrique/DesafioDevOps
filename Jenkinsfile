@@ -7,9 +7,9 @@ pipeline{
                 echo 'Building'
                 git 'https://github.com/LimaHenrique/DesafioDevOps'
                 bat '''
-                python -m pip install --upgrade pip
-                pip install python-jenkins
-                pip install virtualenv
+                pip3 install python-jenkins
+                python3 -m pip3 install --upgrade pip3
+                pip3 install virtualenv
                 virtualenv env
                 env//Scripts//activate
                 '''
@@ -19,7 +19,7 @@ pipeline{
             steps{
                bat '''
                cd Rodrigo
-               python -m Pyautomators -f json -o .//test.json
+               python3 -m Pyautomators -f json -o .//test.json
                type test.json
                '''
             }
