@@ -6,7 +6,11 @@ pipeline{
             steps{
                 echo 'Building'
                 bat '''
-                env/Scripts/activate
+                pip install python-jenkins
+                python -m pip install --upgrade pip
+                pip install virtualenv
+                virtualenv env
+                env//Scripts//activate
                 '''
             }
         }
@@ -14,7 +18,7 @@ pipeline{
             steps{
                bat '''
                cd Rodrigo
-               python -m Pyautomators -f json -o test.json
+               python -m Pyautomators -f json -o .//test.json
                type test.json
                '''
             }
