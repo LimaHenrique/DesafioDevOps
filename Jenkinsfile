@@ -10,7 +10,7 @@ pipeline{
                 start cmd.exe python -m pip install --upgrade pip
                 start cmd.exe pip install virtualenv
                 start cmd.exe virtualenv env
-                start cmd.exe env//Scripts//activate
+                start cmd.exe env/Scripts/activate
                 '''
             }
         }
