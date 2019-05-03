@@ -5,8 +5,8 @@ pipeline{
         stage ("Build"){
             steps{
                 echo 'Building'
-                git 'https://github.com/LimaHenrique/DesafioDevOps'
                 sh '''
+                git 'https://github.com/LimaHenrique/DesafioDevOps'
                 pip install python-jenkins
                 python -m pip install --upgrade pip
                 pip install virtualenv
