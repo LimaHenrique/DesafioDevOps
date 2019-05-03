@@ -21,6 +21,7 @@ pipeline{
                start cmd.exe cd Rodrigo
                start cmd.exe dir
                start cmd.exe python -m Pyautomators -f json -o rodrigo.json
+               start cmd.exe type rodrigo.json
                '''
             }
         }
