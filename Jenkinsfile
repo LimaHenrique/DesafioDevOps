@@ -18,7 +18,7 @@ pipeline{
         stage ("Test"){
             steps{
                bat '''
-               
+               cd Rodrigo
                python -m Pyautomators -f json -o .//test.json
                
                '''
