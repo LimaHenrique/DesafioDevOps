@@ -5,7 +5,7 @@ pipeline{
         stage ("Build"){
             steps{
                 echo 'Building'
-                git 'https://github.com/LimaHenrique/testejp'
+                git 'https://github.com/LimaHenrique/DesafioDevOps'
                 bat '''
                 bat start cmd.exe pip install python-jenkins
                 start cmd.exe python -m pip install --upgrade pip
