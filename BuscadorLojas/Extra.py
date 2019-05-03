@@ -28,4 +28,3 @@ def step_impl(context):
 @then(u'a loja mais próxima a mim será mostrada')
 def step_impl(context):
     assert 'JOÃO DIAS' in context.driver.switch_to_window(context.driver.window_handles[1])
-    
