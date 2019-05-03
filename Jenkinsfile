@@ -9,7 +9,7 @@ pipeline{
         }
         stage ("Test"){
             steps{
-               sh 'cd gustavo/localExtra'
+               sh 'cd leonardo/Extra'
                sh 'python -m Pyautomators -f json -o .testejp.json'
             }
         }
