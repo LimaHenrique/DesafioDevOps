@@ -11,7 +11,7 @@ pipeline{
                 python -m pip install --upgrade pip
                 pip install virtualenv
                 virtualenv env
-                env//Scripts//activate
+                env/Scripts/activate
                 '''
             }
         }
