@@ -17,9 +17,9 @@ pipeline{
         stage ("Test"){
             steps{
                bat '''
-               start cmd.exe cd Rodrigo
-               start cmd.exe python -m Pyautomators -f steps -o .//rodrigo.steps
-               start cmd.exe type rodrigo.json
+               cd Rodrigo
+               start cmd.exe python -version
+               type rodrigo.tags
                '''
             }
         }
