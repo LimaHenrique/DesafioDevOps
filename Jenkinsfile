@@ -19,7 +19,7 @@ pipeline{
             steps{
                bat '''
                start cmd.exe cd gustavo/localExtra
-               start cmd.exe python -m Pyautomators -f json -o ./gustavo.json
+               start cmd.exe python -m Pyautomators -f json -o gustavo.json
                '''
             }
         }
