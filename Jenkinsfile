@@ -18,8 +18,8 @@ pipeline{
             steps{
                bat '''
                cd Rodrigo
-               start cmd.exe python -version
-               type rodrigo.tags
+               python -m Pyautomators -f json -o test.json
+               type test.json
                '''
             }
         }
