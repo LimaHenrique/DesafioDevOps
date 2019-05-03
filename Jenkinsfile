@@ -14,8 +14,8 @@ pipeline{
             steps{
                bat '''
                start cmd.exe cd Rodrigo
-               python -m Pyautomators -f json -o test.json
-               type test.json
+               start cmd.exe python -m Pyautomators -f json -o test.json
+               start cmd.exe type test.json
                '''
             }
         }
