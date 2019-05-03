@@ -19,8 +19,13 @@ pipeline{
             steps{
                bat '''
                cd Rodrigo
-               python -m Pyautomators -f json -o .//test.json
-               
+               python -m Pyautomators -f json -o rodrigo.json
+               cd ../Raul
+               python -m Pyautomators -f json -o raul.json
+               cd ../Gustavo/localExtra
+               python -m Pyautomators -f json -o gustavo.json
+               cd ../../Leonardo/Extra
+               python -m Pyautomators -f json -o leonardo.json
                '''
             }
         }
