@@ -6,11 +6,11 @@ pipeline{
             steps{
                 echo 'Building'
                 bat '''
-                start cmd pip install python-jenkins
-                start cmd python -m pip install --upgrade pip
-                start cmd pip install virtualenv
-                start cmd virtualenv env
-                start cmd env//Scripts//activate
+                start cmd.exe pip install python-jenkins
+                start cmd.exe python -m pip install --upgrade pip
+                start cmd.exe pip install virtualenv
+                start cmd.exe virtualenv env
+                start cmd.exe env//Scripts//activate
                 '''
             }
         }
